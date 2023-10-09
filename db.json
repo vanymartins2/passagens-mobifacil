@@ -1,0 +1,572 @@
+{
+  "data": [
+    {
+      "source": "MOBIFACIL",
+      "tripType": "ONE_WAY",
+      "totalMiles": "14278",
+      "totalMoney": "0.0",
+      "date": "2023-03-17T19:03:12.296",
+      "orderId": "13336750",
+      "status": "PROCESSED",
+      "segments": [
+        {
+          "busType": "CONVENCIONAL",
+          "segment": "SEGMENT_1",
+          "refundable": "false",
+          "stops": "0",
+          "legs": [
+            {
+              "busClass": "CONVENCIONAL",
+              "busCompanyCode": "3",
+              "busCompanyName": "EXPRESSO UNIAO LTDA",
+              "arrivalBusStationCode": "7453",
+              "departureBusStationCode": "21787",
+              "departureDate": "2023-04-22T08:00:00Z",
+              "arrivalDate": "2023-04-22T14:04:00Z",
+              "departureCity": "SAO PAULO( TODOS)",
+              "departureState": "SP",
+              "arrivalCity": "PASSOS - MG",
+              "arrivalState": "MG",
+              "seats": [
+                {
+                  "chosenCost": "miles",
+                  "costMiles": "7093",
+                  "busFareAmount": "90.94",
+                  "costMoney": "0",
+                  "recordLocator": "RYZCSXT",
+                  "seatNumber": "05",
+                  "ticketNumber": "10000080794820",
+                  "partnerTransactionId": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyMTc4Ny43NDUzLjIwMjMtMDQtMjIuMzgwOTQzLjEwMDAwMDgwNzk0ODIwLjA1Li0xLmZhbHNlLjc5QDQ0IiwiZXhwIjoxNzEwNzAzMDc0LCJ1c2VySWQiOiJTTUlMRVMiLCJyb2xlIjoiLSJ9._WJ2fX_5DiWUn7DUBCaHTaHOc0MIYLR0Eq-YfaDzsnk",
+                  "serviceId": "380943",
+                  "bookingClass": "CONVENCIONAL",
+                  "paxDocument": "1231231214",
+                  "busPassengerId": "2",
+                  "passenger": {
+                    "indexGDS": "2",
+                    "firstName": "Maria",
+                    "lastName": "Silva",
+                    "type": "CHD",
+                    "documentNumber": "1231231214",
+                    "documentType": "CPF"
+                  }
+                },
+                {
+                  "chosenCost": "miles",
+                  "costMiles": "7093",
+                  "busFareAmount": "90.94",
+                  "costMoney": "0",
+                  "recordLocator": "VIKCSVF",
+                  "seatNumber": "04",
+                  "ticketNumber": "10000080794821",
+                  "partnerTransactionId": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyMTc4Ny43NDUzLjIwMjMtMDQtMjIuMzgwOTQzLjEwMDAwMDgwNzk0ODIxLjA0Li0xLmZhbHNlLjc5QDQ0IiwiZXhwIjoxNzEwNzAzMDc0LCJ1c2VySWQiOiJTTUlMRVMiLCJyb2xlIjoiLSJ9.loziXhcOub3qLLUqxNBOrSg-S9gVgXzhJG2oP2L0rXI",
+                  "serviceId": "380943",
+                  "bookingClass": "CONVENCIONAL",
+                  "paxDocument": "1231233",
+                  "busPassengerId": "1",
+                  "passenger": {
+                    "indexGDS": "1",
+                    "firstName": "Murilo",
+                    "lastName": "Silva",
+                    "type": "ADT",
+                    "documentNumber": "1231233",
+                    "documentType": "RG"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "busType": "CONVENCIONAL",
+          "segment": "SEGMENT_2",
+          "refundable": "false",
+          "stops": "0",
+          "legs": [
+            {
+              "busClass": "CONVENCIONAL",
+              "busCompanyCode": "3",
+              "busCompanyName": "EXPRESSO UNIAO LTDA",
+              "arrivalBusStationCode": "21787",
+              "departureBusStationCode": "7453",
+              "departureDate": "2023-04-29T08:00:00Z",
+              "arrivalDate": "2023-04-29T14:04:00Z",
+              "departureCity": "PASSOS - MG",
+              "departureState": "MG",
+              "arrivalCity": "SAO PAULO( TODOS)",
+              "arrivalState": "SP",
+              "seats": [
+                {
+                  "chosenCost": "miles",
+                  "costMiles": "7185",
+                  "busFareAmount": "92.12",
+                  "costMoney": "0",
+                  "recordLocator": "RIKCNXC",
+                  "seatNumber": "10",
+                  "ticketNumber": "10000080794823",
+                  "partnerTransactionId": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NDUzLjIxNzg3LjIwMjMtMDQtMjkuMzgwOTAyLjEwMDAwMDgwNzk0ODIzLjEwLi0xLmZhbHNlLjg0QDUyIiwiZXhwIjoxNzEwNzAzMTkxLCJ1c2VySWQiOiJTTUlMRVMiLCJyb2xlIjoiLSJ9.RQmZe7smJTAz1yvy_yMsSqWayFC7rcdbk_8iQcn0Tiw",
+                  "serviceId": "380902",
+                  "bookingClass": "CONVENCIONAL",
+                  "paxDocument": "111111",
+                  "busPassengerId": "1",
+                  "passenger": {
+                    "indexGDS": "1",
+                    "firstName": "Gabriel",
+                    "lastName": "Silva",
+                    "type": "ADT",
+                    "documentNumber": "111111",
+                    "documentType": "CPF"
+                  }
+                },
+                {
+                  "chosenCost": "miles",
+                  "costMiles": "7185",
+                  "busFareAmount": "92.12",
+                  "costMoney": "0",
+                  "recordLocator": "VYKCSXB",
+                  "seatNumber": "11",
+                  "ticketNumber": "10000080794822",
+                  "partnerTransactionId": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NDUzLjIxNzg3LjIwMjMtMDQtMjkuMzgwOTAyLjEwMDAwMDgwNzk0ODIyLjExLi0xLmZhbHNlLjg0QDUyIiwiZXhwIjoxNzEwNzAzMTkxLCJ1c2VySWQiOiJTTUlMRVMiLCJyb2xlIjoiLSJ9.6XwtWjdyFWUfDZdoAxVMJP9tmwQlDvExeaSbW5R3TjA",
+                  "serviceId": "380902",
+                  "bookingClass": "CONVENCIONAL",
+                  "paxDocument": "222222",
+                  "busPassengerId": "2",
+                  "passenger": {
+                    "indexGDS": "2",
+                    "firstName": "Sara",
+                    "lastName": "Silva",
+                    "type": "CHD",
+                    "documentNumber": "222222",
+                    "documentType": "CPF"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "MOBIFACIL",
+      "tripType": "ONE_WAY",
+      "totalMiles": "0",
+      "totalMoney": "0.0",
+      "date": "2023-03-09T18:18:23.981",
+      "orderId": "13336545",
+      "status": "CANCELLED",
+      "segments": [
+        {
+          "busType": "LEITO COM AR",
+          "segment": "SEGMENT_1",
+          "refundable": "false",
+          "stops": "0",
+          "legs": [
+            {
+              "busClass": "LEITO COM AR",
+              "busCompanyCode": "3",
+              "busCompanyName": "EXPRESSO UNIAO LTDA",
+              "arrivalBusStationCode": "7453",
+              "departureBusStationCode": "21787",
+              "departureCity": "SAO PAULO( TODOS)",
+              "departureState": "SP",
+              "arrivalCity": "PASSOS - MG",
+              "arrivalState": "MG",
+              "seats": [
+                {
+                  "chosenCost": "miles",
+                  "costMiles": "11677",
+                  "busFareAmount": "149.7",
+                  "costMoney": "0",
+                  "recordLocator": "RYKCLSD",
+                  "seatNumber": "12",
+                  "ticketNumber": "10000080794373",
+                  "partnerTransactionId": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyMTc4Ny43NDUzLjIwMjMtMDQtMjEuMzgxMTQ4LjEwMDAwMDgwNzk0MzczLjEyLi0xLmZhbHNlLjEzOEAyMCIsImV4cCI6MTcxMDAwOTkwNCwidXNlcklkIjoiU01JTEVTIiwicm9sZSI6Ii0ifQ.KMtRo-iT4RnX01NWROsPZYosS12rtiFnUQodsWG0JDQ",
+                  "serviceId": "381148",
+                  "bookingClass": "LEITO COM AR",
+                  "paxDocument": "1231233",
+                  "busPassengerId": "1",
+                  "passenger": {
+                    "indexGDS": "1",
+                    "firstName": "Murilo",
+                    "lastName": "Silva",
+                    "type": "ADT",
+                    "documentNumber": "1231233",
+                    "documentType": "RG"
+                  }
+                },
+                {
+                  "chosenCost": "miles",
+                  "costMiles": "11677",
+                  "busFareAmount": "149.7",
+                  "costMoney": "0",
+                  "recordLocator": "VIZCLSC",
+                  "seatNumber": "13",
+                  "ticketNumber": "10000080794372",
+                  "partnerTransactionId": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyMTc4Ny43NDUzLjIwMjMtMDQtMjEuMzgxMTQ4LjEwMDAwMDgwNzk0MzcyLjEzLi0xLmZhbHNlLjEzOEAyMCIsImV4cCI6MTcxMDAwOTkwNCwidXNlcklkIjoiU01JTEVTIiwicm9sZSI6Ii0ifQ.RTikAiDGCxqae1ObyHO7TQaW4vLl9m8S9dTE8uyNJtI",
+                  "serviceId": "381148",
+                  "bookingClass": "LEITO COM AR",
+                  "paxDocument": "1231231214",
+                  "busPassengerId": "2",
+                  "passenger": {
+                    "indexGDS": "2",
+                    "firstName": "Maria",
+                    "lastName": "Silva",
+                    "type": "CHD",
+                    "documentNumber": "1231231214",
+                    "documentType": "CPF"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "busType": "LEITO COM AR",
+          "segment": "SEGMENT_2",
+          "refundable": "false",
+          "stops": "0",
+          "legs": [
+            {
+              "busClass": "LEITO COM AR",
+              "busCompanyCode": "3",
+              "busCompanyName": "EXPRESSO UNIAO LTDA",
+              "arrivalBusStationCode": "21787",
+              "departureBusStationCode": "7453",
+              "departureCity": "PASSOS - MG",
+              "departureState": "MG",
+              "arrivalCity": "SAO PAULO( TODOS)",
+              "arrivalState": "SP",
+              "seats": [
+                {
+                  "chosenCost": "miles",
+                  "costMiles": "11443",
+                  "busFareAmount": "146.71",
+                  "costMoney": "0",
+                  "recordLocator": "RYZCLSA",
+                  "seatNumber": "12",
+                  "ticketNumber": "10000080794370",
+                  "partnerTransactionId": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NDUzLjIxNzg3LjIwMjMtMDQtMjguMzgxMTA2LjEwMDAwMDgwNzk0MzcwLjEyLi0xLmZhbHNlLjEzOUAxMSIsImV4cCI6MTcxMDAwOTg0MSwidXNlcklkIjoiU01JTEVTIiwicm9sZSI6Ii0ifQ.vhi46RGGJ1t2Vn7sHoPBpxSjNvtkyXhA_tmWaYEzRC4",
+                  "serviceId": "381106",
+                  "bookingClass": "LEITO COM AR",
+                  "paxDocument": "111111",
+                  "busPassengerId": "1",
+                  "passenger": {
+                    "indexGDS": "1",
+                    "firstName": "Gabriel",
+                    "lastName": "Silva",
+                    "type": "ADT",
+                    "documentNumber": "111111",
+                    "documentType": "CPF"
+                  }
+                },
+                {
+                  "chosenCost": "miles",
+                  "costMiles": "11443",
+                  "busFareAmount": "146.71",
+                  "costMoney": "0",
+                  "recordLocator": "VIKCLNB",
+                  "seatNumber": "13",
+                  "ticketNumber": "10000080794371",
+                  "partnerTransactionId": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NDUzLjIxNzg3LjIwMjMtMDQtMjguMzgxMTA2LjEwMDAwMDgwNzk0MzcxLjEzLi0xLmZhbHNlLjEzOUAxMSIsImV4cCI6MTcxMDAwOTg0MSwidXNlcklkIjoiU01JTEVTIiwicm9sZSI6Ii0ifQ.iB59oHQ4OR24Zob5Ron8yrMO5mGiqHB_Pic24OyKSwQ",
+                  "serviceId": "381106",
+                  "bookingClass": "LEITO COM AR",
+                  "paxDocument": "222222",
+                  "busPassengerId": "2",
+                  "passenger": {
+                    "indexGDS": "2",
+                    "firstName": "Sara",
+                    "lastName": "Silva",
+                    "type": "CHD",
+                    "documentNumber": "222222",
+                    "documentType": "CPF"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "MOBIFACIL",
+      "tripType": "ONE_WAY",
+      "totalMiles": "20072",
+      "totalMoney": "0.0",
+      "date": "2023-03-10T15:26:50.441",
+      "orderId": "13336554",
+      "status": "PROCESSED",
+      "segments": [
+        {
+          "busType": "EXECUTIVO COM AR",
+          "segment": "SEGMENT_1",
+          "refundable": "false",
+          "stops": "0",
+          "legs": [
+            {
+              "busClass": "EXECUTIVO COM AR",
+              "busCompanyCode": "3",
+              "busCompanyName": "EXPRESSO UNIAO LTDA",
+              "arrivalBusStationCode": "7453",
+              "departureBusStationCode": "21787",
+              "departureCity": "SAO PAULO( TODOS)",
+              "departureState": "SP",
+              "arrivalCity": "PASSOS - MG",
+              "arrivalState": "MG",
+              "seats": [
+                {
+                  "chosenCost": "miles",
+                  "costMiles": "10096",
+                  "busFareAmount": "129.43",
+                  "costMoney": "0",
+                  "recordLocator": "RYZCQKE",
+                  "seatNumber": "18",
+                  "ticketNumber": "10000080794434",
+                  "partnerTransactionId": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyMTc4Ny43NDUzLjIwMjMtMDQtMjEuMzgxMTQ1LjEwMDAwMDgwNzk0NDM0LjE4Li0xLmZhbHNlLjExN0A5MyIsImV4cCI6MTcxMDA4NjEwMSwidXNlcklkIjoiU01JTEVTIiwicm9sZSI6Ii0ifQ.2S_t17URCgN4ImstldqigsYSyN6kJLRFJ0EeP6U-_9U",
+                  "serviceId": "381145",
+                  "bookingClass": "EXECUTIVO COM AR",
+                  "paxDocument": "1231231214",
+                  "busPassengerId": "2",
+                  "passenger": {
+                    "indexGDS": "2",
+                    "firstName": "Maria",
+                    "lastName": "Silva",
+                    "type": "CHD",
+                    "documentNumber": "1231231214",
+                    "documentType": "CPF"
+                  }
+                },
+                {
+                  "chosenCost": "miles",
+                  "costMiles": "10096",
+                  "busFareAmount": "129.43",
+                  "costMoney": "0",
+                  "recordLocator": "RYZCLZD",
+                  "seatNumber": "17",
+                  "ticketNumber": "10000080794433",
+                  "partnerTransactionId": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyMTc4Ny43NDUzLjIwMjMtMDQtMjEuMzgxMTQ1LjEwMDAwMDgwNzk0NDMzLjE3Li0xLmZhbHNlLjExN0A5MyIsImV4cCI6MTcxMDA4NjEwMSwidXNlcklkIjoiU01JTEVTIiwicm9sZSI6Ii0ifQ._T9A7nNhdqKAGlJaPrg22kdv_AZXlRUV21YPqXNw3a0",
+                  "serviceId": "381145",
+                  "bookingClass": "EXECUTIVO COM AR",
+                  "paxDocument": "1231233",
+                  "busPassengerId": "1",
+                  "passenger": {
+                    "indexGDS": "1",
+                    "firstName": "Murilo",
+                    "lastName": "Silva",
+                    "type": "ADT",
+                    "documentNumber": "1231233",
+                    "documentType": "RG"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "busType": "EXECUTIVO COM AR",
+          "segment": "SEGMENT_2",
+          "refundable": "false",
+          "stops": "0",
+          "legs": [
+            {
+              "busClass": "EXECUTIVO COM AR",
+              "busCompanyCode": "3",
+              "busCompanyName": "EXPRESSO UNIAO LTDA",
+              "arrivalBusStationCode": "21787",
+              "departureBusStationCode": "7453",
+              "departureCity": "PASSOS - MG",
+              "departureState": "MG",
+              "arrivalCity": "SAO PAULO( TODOS)",
+              "arrivalState": "SP",
+              "seats": [
+                {
+                  "chosenCost": "miles",
+                  "costMiles": "9976",
+                  "busFareAmount": "127.9",
+                  "costMoney": "0",
+                  "recordLocator": "VIKCQZK",
+                  "seatNumber": "14",
+                  "ticketNumber": "10000080794431",
+                  "partnerTransactionId": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NDUzLjIxNzg3LjIwMjMtMDQtMjguMzgwODA2LjEwMDAwMDgwNzk0NDMxLjE0Li0xLmZhbHNlLjEyMEAzMCIsImV4cCI6MTcxMDA4NjAxMiwidXNlcklkIjoiU01JTEVTIiwicm9sZSI6Ii0ifQ.uoJRlm80ECjsrqOp098wVIv_VZrziZ665E3h3pJKc7Y",
+                  "serviceId": "380806",
+                  "bookingClass": "EXECUTIVO COM AR",
+                  "paxDocument": "111111",
+                  "busPassengerId": "1",
+                  "passenger": {
+                    "indexGDS": "1",
+                    "firstName": "Gabriel",
+                    "lastName": "Silva",
+                    "type": "ADT",
+                    "documentNumber": "111111",
+                    "documentType": "CPF"
+                  }
+                },
+                {
+                  "chosenCost": "miles",
+                  "costMiles": "9976",
+                  "busFareAmount": "127.9",
+                  "costMoney": "0",
+                  "recordLocator": "RYKCLKA",
+                  "seatNumber": "15",
+                  "ticketNumber": "10000080794432",
+                  "partnerTransactionId": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NDUzLjIxNzg3LjIwMjMtMDQtMjguMzgwODA2LjEwMDAwMDgwNzk0NDMyLjE1Li0xLmZhbHNlLjEyMEAzMCIsImV4cCI6MTcxMDA4NjAxMiwidXNlcklkIjoiU01JTEVTIiwicm9sZSI6Ii0ifQ.3ceEzwowfmQjJaJtS1FKQU0JRvXZ5u4HBL5crVU0Mjo",
+                  "serviceId": "380806",
+                  "bookingClass": "EXECUTIVO COM AR",
+                  "paxDocument": "222222",
+                  "busPassengerId": "2",
+                  "passenger": {
+                    "indexGDS": "2",
+                    "firstName": "Sara",
+                    "lastName": "Silva",
+                    "type": "CHD",
+                    "documentNumber": "222222",
+                    "documentType": "CPF"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "MOBIFACIL",
+      "tripType": "ONE_WAY",
+      "totalMiles": "0",
+      "totalMoney": "0.0",
+      "date": "2023-03-10T14:09:01.269",
+      "orderId": "13336552",
+      "status": "CANCELLED",
+      "segments": [
+        {
+          "busType": "EXECUTIVO COM AR",
+          "segment": "SEGMENT_1",
+          "refundable": "false",
+          "stops": "0",
+          "legs": [
+            {
+              "busClass": "EXECUTIVO COM AR",
+              "busCompanyCode": "3",
+              "busCompanyName": "EXPRESSO UNIAO LTDA",
+              "arrivalBusStationCode": "7453",
+              "departureBusStationCode": "21787",
+              "departureCity": "SAO PAULO( TODOS)",
+              "departureState": "SP",
+              "arrivalCity": "PASSOS - MG",
+              "arrivalState": "MG",
+              "seats": [
+                {
+                  "chosenCost": "miles",
+                  "costMiles": "10096",
+                  "busFareAmount": "129.43",
+                  "costMoney": "0",
+                  "recordLocator": "RYZCLZJ",
+                  "seatNumber": "15",
+                  "ticketNumber": "10000080794423",
+                  "partnerTransactionId": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyMTc4Ny43NDUzLjIwMjMtMDQtMjEuMzgxMTQ1LjEwMDAwMDgwNzk0NDIzLjE1Li0xLmZhbHNlLjExN0A5MyIsImV4cCI6MTcxMDA4MTM4NCwidXNlcklkIjoiU01JTEVTIiwicm9sZSI6Ii0ifQ.OYpLk2GO90kwGG5UMjhEiAxQLc9xILtHarsArVWy0M0",
+                  "serviceId": "381145",
+                  "bookingClass": "EXECUTIVO COM AR",
+                  "paxDocument": "1231231214",
+                  "busPassengerId": "2",
+                  "passenger": {
+                    "indexGDS": "2",
+                    "firstName": "Maria",
+                    "lastName": "Silva",
+                    "type": "CHD",
+                    "documentNumber": "1231231214",
+                    "documentType": "CPF"
+                  }
+                },
+                {
+                  "chosenCost": "miles",
+                  "costMiles": "10096",
+                  "busFareAmount": "129.43",
+                  "costMoney": "0",
+                  "recordLocator": "RYKCQKO",
+                  "seatNumber": "14",
+                  "ticketNumber": "10000080794424",
+                  "partnerTransactionId": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyMTc4Ny43NDUzLjIwMjMtMDQtMjEuMzgxMTQ1LjEwMDAwMDgwNzk0NDI0LjE0Li0xLmZhbHNlLjExN0A5MyIsImV4cCI6MTcxMDA4MTM4NCwidXNlcklkIjoiU01JTEVTIiwicm9sZSI6Ii0ifQ.ch6l05uSeAQEUWGzQWBbC_VBdmaiIIJTgYY_aVzzEfw",
+                  "serviceId": "381145",
+                  "bookingClass": "EXECUTIVO COM AR",
+                  "paxDocument": "1231233",
+                  "busPassengerId": "1",
+                  "passenger": {
+                    "indexGDS": "1",
+                    "firstName": "Murilo",
+                    "lastName": "Silva",
+                    "type": "ADT",
+                    "documentNumber": "1231233",
+                    "documentType": "RG"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "busType": "CONVENCIONAL",
+          "segment": "SEGMENT_2",
+          "refundable": "false",
+          "stops": "0",
+          "legs": [
+            {
+              "busClass": "CONVENCIONAL",
+              "busCompanyCode": "3",
+              "busCompanyName": "EXPRESSO UNIAO LTDA",
+              "arrivalBusStationCode": "21787",
+              "departureBusStationCode": "7453",
+              "departureCity": "PASSOS - MG",
+              "departureState": "MG",
+              "arrivalCity": "SAO PAULO( TODOS)",
+              "arrivalState": "SP",
+              "seats": [
+                {
+                  "chosenCost": "miles",
+                  "costMiles": "8294",
+                  "busFareAmount": "106.33",
+                  "costMoney": "0",
+                  "recordLocator": "RYZCQKQ",
+                  "seatNumber": "14",
+                  "ticketNumber": "10000080794425",
+                  "partnerTransactionId": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NDUzLjIxNzg3LjIwMjMtMDQtMjguMzQwMDAxLjEwMDAwMDgwNzk0NDI1LjE0Li0xLmZhbHNlLjk3QDMwIiwiZXhwIjoxNzEwMDgxNDMwLCJ1c2VySWQiOiJTTUlMRVMiLCJyb2xlIjoiLSJ9.ozU4-szxP2sOVrXS8Jfc42IVyBgGShPTx4SuzZVkCjQ",
+                  "serviceId": "340001",
+                  "bookingClass": "CONVENCIONAL",
+                  "paxDocument": "111111",
+                  "busPassengerId": "1",
+                  "passenger": {
+                    "indexGDS": "1",
+                    "firstName": "Gabriel",
+                    "lastName": "Silva",
+                    "type": "ADT",
+                    "documentNumber": "111111",
+                    "documentType": "CPF"
+                  }
+                },
+                {
+                  "chosenCost": "miles",
+                  "costMiles": "8294",
+                  "busFareAmount": "106.33",
+                  "costMoney": "0",
+                  "recordLocator": "RIKCQKH",
+                  "seatNumber": "15",
+                  "ticketNumber": "10000080794426",
+                  "partnerTransactionId": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NDUzLjIxNzg3LjIwMjMtMDQtMjguMzQwMDAxLjEwMDAwMDgwNzk0NDI2LjE1Li0xLmZhbHNlLjk3QDMwIiwiZXhwIjoxNzEwMDgxNDMwLCJ1c2VySWQiOiJTTUlMRVMiLCJyb2xlIjoiLSJ9.H0kvBaKgpN4qbFx-uo7dQvgh0PU4kimnjYjo3FGGouA",
+                  "serviceId": "340001",
+                  "bookingClass": "CONVENCIONAL",
+                  "paxDocument": "222222",
+                  "busPassengerId": "2",
+                  "passenger": {
+                    "indexGDS": "2",
+                    "firstName": "Sara",
+                    "lastName": "Silva",
+                    "type": "CHD",
+                    "documentNumber": "222222",
+                    "documentType": "CPF"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
