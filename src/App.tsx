@@ -15,6 +15,7 @@ import { Loading } from './components/Loading'
 export default function App() {
   const [tickets, setTickets] = useState<FormattedTicket[]>([])
   const [searchValue, setSearchValue] = useState('')
+  const [removedTicketId, setRemovedTicketId] = useState('')
   const [loading, setLoading] = useState(true)
 
   const isSearchEmpty = searchValue === ''
@@ -26,6 +27,10 @@ export default function App() {
     setTickets(filteredTickets)
 
     setLoading(false)
+  }
+
+  function saveRemovedTicketId(ticketId: string) {
+    setRemovedTicketId(ticketId)
   }
 
   async function getTickets() {
@@ -70,11 +75,19 @@ export default function App() {
           {loading ? (
             <Loading loadingState={loading} />
           ) : (
-            <List tickets={tickets} isLoading={loading} />
+            <List
+              tickets={tickets}
+              isLoading={loading}
+              saveRemovedTicket={saveRemovedTicketId}
+            />
           )}
         </main>
 
-        <Modal />
+        <Modal
+          ticketId={removedTicketId}
+          tickets={tickets}
+          updateList={setTickets}
+        />
       </AlertDialog.Root>
     </>
   )

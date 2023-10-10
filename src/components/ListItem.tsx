@@ -13,6 +13,7 @@ export interface ListItemProps {
   busCompanyName: string
   bookingClass: string
   seatCostMiles: string
+  saveRemovedTicket: (ticketId: string) => void
 }
 
 export function ListItem(props: ListItemProps) {
@@ -33,7 +34,7 @@ export function ListItem(props: ListItemProps) {
 
         <td>
           <AlertDialog.Trigger asChild>
-            <button>
+            <button onClick={() => props.saveRemovedTicket(props.ticketNumber)}>
               <Trash size={18} color="#646cff" />
             </button>
           </AlertDialog.Trigger>

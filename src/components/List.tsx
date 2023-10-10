@@ -4,9 +4,10 @@ import { Loading } from './Loading'
 interface ListProps {
   tickets: FormattedTicket[]
   isLoading: boolean
+  saveRemovedTicket: (ticketId: string) => void
 }
 
-export function List({ tickets, isLoading }: ListProps) {
+export function List({ tickets, isLoading, saveRemovedTicket }: ListProps) {
   return (
     <table cellSpacing={0} cellPadding={10} style={{ textAlign: 'center' }}>
       <tbody>
@@ -28,7 +29,13 @@ export function List({ tickets, isLoading }: ListProps) {
         {isLoading ? (
           <Loading loadingState={isLoading} />
         ) : (
-          tickets.map((ticket) => <ListItem key={ticket.orderId} {...ticket} />)
+          tickets.map((ticket) => (
+            <ListItem
+              key={ticket.orderId}
+              {...ticket}
+              saveRemovedTicket={saveRemovedTicket}
+            />
+          ))
         )}
       </tbody>
     </table>
