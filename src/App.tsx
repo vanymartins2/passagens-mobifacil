@@ -10,10 +10,23 @@ import { Header } from './components/Header'
 import { List } from './components/List'
 import { Modal } from './components/Modal'
 import { Input } from './components/Input'
+import { Loading } from './components/Loading'
 
 export default function App() {
   const [tickets, setTickets] = useState<FormattedTicket[]>([])
+  const [searchValue, setSearchValue] = useState('')
   const [loading, setLoading] = useState(true)
+
+  const isSearchEmpty = searchValue === ''
+
+  function handleSearchTicket() {
+    const filteredTickets = tickets.filter((ticket) =>
+      ticket.orderId.match(searchValue)
+    )
+    setTickets(filteredTickets)
+
+    setLoading(false)
+  }
 
   async function getTickets() {
     try {
@@ -29,7 +42,14 @@ export default function App() {
     setTimeout(() => {
       getTickets()
     }, 2000)
-  }, [])
+  }, [isSearchEmpty])
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      handleSearchTicket()
+    }, 1000)
+  }, [searchValue])
 
   return (
     <>
@@ -42,9 +62,16 @@ export default function App() {
             padding: '1.85rem 1.0875rem 2rem',
           }}
         >
-          <Input placeholder="Digite o número do pedido para pesquisar..." />
+          <Input
+            placeholder="Digite o número do pedido para pesquisar..."
+            onChange={(event) => setSearchValue(event.target.value)}
+          />
 
-          <List tickets={tickets} isLoading={loading} />
+          {loading ? (
+            <Loading loadingState={loading} />
+          ) : (
+            <List tickets={tickets} isLoading={loading} />
+          )}
         </main>
 
         <Modal />
