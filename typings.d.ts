@@ -56,7 +56,7 @@ interface Passenger {
   documentType: string
 }
 
-interface FormattedTable {
+interface FormattedTicket {
   status: string
   date: string
   name: string

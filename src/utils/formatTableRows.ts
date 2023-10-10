@@ -5,7 +5,7 @@ export function formatTableRows(data: Ticket[]) {
     return []
   }
 
-  const result: FormattedTable[] = data.flatMap((ticket) =>
+  const result: FormattedTicket[] = data.flatMap((ticket) =>
     ticket.segments.flatMap((segment) =>
       segment.legs.flatMap((leg) =>
         leg.seats.map((seat) => {

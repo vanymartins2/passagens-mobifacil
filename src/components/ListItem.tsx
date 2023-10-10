@@ -18,18 +18,18 @@ export interface ListItemProps {
 export function ListItem(props: ListItemProps) {
   return (
     <>
-      <tr style={styles.tableContent}>
-        <td style={styles.content}>{props.orderId}</td>
-        <td style={styles.content}>{props.ticketNumber}</td>
-        <td style={styles.content}>{props.documentNumber}</td>
-        <td style={styles.content}>{props.name}</td>
-        <td style={styles.content}>{props.departureCity}</td>
-        <td style={styles.content}>{props.arrivalCity}</td>
-        <td style={styles.content}>{props.departureDate}</td>
-        <td style={styles.content}>{props.arrivalDate}</td>
-        <td style={styles.content}>{props.busCompanyName}</td>
-        <td style={styles.content}>{props.bookingClass}</td>
-        <td style={styles.content}>{props.seatCostMiles}</td>
+      <tr style={{ color: '#e4e6eb', fontSize: '0.85rem' }}>
+        <td>{props.orderId}</td>
+        <td>{props.ticketNumber}</td>
+        <td>{props.documentNumber}</td>
+        <td>{props.name}</td>
+        <td>{props.departureCity}</td>
+        <td>{props.arrivalCity}</td>
+        <td>{props.departureDate}</td>
+        <td>{props.arrivalDate}</td>
+        <td>{props.busCompanyName}</td>
+        <td>{props.bookingClass}</td>
+        <td>{props.seatCostMiles}</td>
 
         <td>
           <AlertDialog.Trigger asChild>
@@ -41,15 +41,4 @@ export function ListItem(props: ListItemProps) {
       </tr>
     </>
   )
-}
-
-const styles = {
-  tableContent: {
-    color: '#e4e6eb',
-    fontSize: '0.85rem',
-    textWrap: 'nowrap',
-  },
-  content: {
-    borderBottom: '1px solid rgba(242,242,242,0.4)',
-  },
 }
