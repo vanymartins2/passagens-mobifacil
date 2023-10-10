@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { ListItem } from './ListItem'
 import { Loading } from './Loading'
 
@@ -8,6 +9,18 @@ interface ListProps {
 }
 
 export function List({ tickets, isLoading, saveRemovedTicket }: ListProps) {
+  const [sortByPassengerName, setSortByPassengerName] = useState(false)
+  const [sortedArray, setSortedArray] = useState<FormattedTicket[]>(tickets)
+
+  useEffect(() => {
+    setSortByPassengerName(false)
+    setSortedArray(
+      tickets.sort((a, b) =>
+        a.name.toLowerCase().localeCompare(b.name.toLowerCase())
+      )
+    )
+  }, [sortByPassengerName])
+
   return (
     <table cellSpacing={0} cellPadding={10} style={{ textAlign: 'center' }}>
       <tbody>
@@ -15,7 +28,14 @@ export function List({ tickets, isLoading, saveRemovedTicket }: ListProps) {
           <th>N° pedido</th>
           <th>N° bilhete</th>
           <th>N° documento</th>
-          <th>Nome do passageiro</th>
+          <th>
+            <button
+              id="sortButton"
+              onClick={() => setSortByPassengerName(!sortByPassengerName)}
+            >
+              Nome do passageiro
+            </button>
+          </th>
           <th>Origem</th>
           <th>Destino</th>
           <th>Ida(Data/Hora)</th>
@@ -28,10 +48,18 @@ export function List({ tickets, isLoading, saveRemovedTicket }: ListProps) {
 
         {isLoading ? (
           <Loading loadingState={isLoading} />
+        ) : sortByPassengerName ? (
+          sortedArray.map((ticket) => (
+            <ListItem
+              key={ticket.ticketNumber}
+              {...ticket}
+              saveRemovedTicket={saveRemovedTicket}
+            />
+          ))
         ) : (
           tickets.map((ticket) => (
             <ListItem
-              key={ticket.orderId}
+              key={ticket.ticketNumber}
               {...ticket}
               saveRemovedTicket={saveRemovedTicket}
             />
