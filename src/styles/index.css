@@ -19,6 +19,14 @@
   margin: 0 auto;
 }
 
+#danger {
+  color: #ff4444;
+}
+
+#danger:hover {
+  border-color: #ff4444;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -59,10 +67,6 @@ button:hover {
 button:focus,
 button:focus-visible {
   box-shadow: 0 2px 10px #121212;
-}
-
-#danger {
-  color: #ff4444;
 }
 
 @media (prefers-color-scheme: light) {
