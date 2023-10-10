@@ -11,7 +11,6 @@ export function Header() {
 
 const styles = {
   container: {
-    width: '100%',
     padding: '12px 32px',
     display: 'flex',
     alignItems: 'center',

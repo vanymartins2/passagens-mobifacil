@@ -1,12 +1,22 @@
 import { Header } from './components/Header'
+import { List } from './components/List'
 import './styles/index.css'
 
-function App() {
+export default function App() {
   return (
     <>
       <Header />
+      <main style={styles.container}>
+        <List />
+      </main>
     </>
   )
 }
 
-export default App
+const styles = {
+  container: {
+    margin: '0 auto',
+    maxWidth: 1280,
+    padding: '1.45rem 1.0875rem 1.45rem',
+  },
+}
