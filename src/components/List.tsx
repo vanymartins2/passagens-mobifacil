@@ -18,7 +18,7 @@ export function List() {
     <table cellSpacing={0} cellPadding={8} style={{ textAlign: 'center' }}>
       <tbody>
         <tr style={styles.tableHeader}>
-          <th style={styles.header}>N° pedido</th>
+          <th style={{ ...styles.header, ...styles.firstChild }}>N° pedido</th>
           <th style={styles.header}>N° bilhete</th>
           <th style={styles.header}>N° documento</th>
           <th style={styles.header}>Nome do passageiro</th>
@@ -44,5 +44,8 @@ const styles = {
   header: {
     borderBottom: '1px solid rgba(100,108,255,0.54)',
     borderRight: '1px solid rgba(100,108,255,0.54)',
+  },
+  firstChild: {
+    borderLeft: '1px solid rgba(100,108,255,0.54)',
   },
 }

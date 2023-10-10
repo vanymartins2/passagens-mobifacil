@@ -49,6 +49,17 @@ h1 {
   color: #f2f2f2;
 }
 
+input {
+  border: none;
+  font-family: Nunito, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+input:focus,
+input:focus-visible {
+  outline: transparent;
+  box-shadow: 2px 2px 2px rgba(100, 108, 255, 0.2);
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
