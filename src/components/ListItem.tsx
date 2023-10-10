@@ -1,4 +1,5 @@
 import { Trash } from 'lucide-react'
+import * as AlertDialog from '@radix-ui/react-alert-dialog'
 
 export interface ListItemProps {
   orderId: string
@@ -31,9 +32,11 @@ export function ListItem(props: ListItemProps) {
         <td style={styles.content}>{props.seatCostMiles}</td>
 
         <td>
-          <button>
-            <Trash size={18} color="#646cff" />
-          </button>
+          <AlertDialog.Trigger asChild>
+            <button>
+              <Trash size={18} color="#646cff" />
+            </button>
+          </AlertDialog.Trigger>
         </td>
       </tr>
     </>

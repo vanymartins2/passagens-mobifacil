@@ -1,14 +1,22 @@
+import './styles/index.css'
+
+import * as AlertDialog from '@radix-ui/react-alert-dialog'
+
 import { Header } from './components/Header'
 import { List } from './components/List'
-import './styles/index.css'
+import { Modal } from './components/Modal'
 
 export default function App() {
   return (
     <>
       <Header />
-      <main style={styles.container}>
-        <List />
-      </main>
+      <AlertDialog.Root>
+        <main style={styles.container}>
+          <List />
+        </main>
+
+        <Modal />
+      </AlertDialog.Root>
     </>
   )
 }
