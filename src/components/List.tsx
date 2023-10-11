@@ -24,7 +24,7 @@ export function List({ tickets, isLoading, saveRemovedTicket }: ListProps) {
   return (
     <table cellSpacing={0} cellPadding={10} style={{ textAlign: 'center' }}>
       <tbody>
-        <tr style={styles.tableHeader}>
+        <tr id="tableHeader" style={{ fontSize: '1rem' }}>
           <th>N° pedido</th>
           <th>N° bilhete</th>
           <th>N° documento</th>
@@ -68,11 +68,4 @@ export function List({ tickets, isLoading, saveRemovedTicket }: ListProps) {
       </tbody>
     </table>
   )
-}
-
-const styles = {
-  tableHeader: {
-    color: '#747bff',
-    fontSize: '1rem',
-  },
 }

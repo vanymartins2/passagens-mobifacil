@@ -19,7 +19,7 @@ export interface ListItemProps {
 export function ListItem(props: ListItemProps) {
   return (
     <>
-      <tr style={{ color: '#e4e6eb', fontSize: '0.85rem' }}>
+      <tr id="listItemText" style={{ fontSize: '0.85rem' }}>
         <td>{props.orderId}</td>
         <td>{props.ticketNumber}</td>
         <td>{props.documentNumber}</td>

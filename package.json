@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.0.5",
+    "@radix-ui/react-switch": "^1.0.3",
     "axios": "^1.5.1",
     "json-server": "^0.17.4",
     "lucide-react": "^0.284.0",

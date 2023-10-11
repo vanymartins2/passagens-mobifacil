@@ -14,16 +14,7 @@ export function Input({ ...rest }: InputProps) {
       }}
     >
       <Search size={18} />
-      <input
-        style={{
-          width: '25%',
-          padding: '0.6rem',
-          borderRadius: '0.4rem',
-          backgroundColor: '#18191A',
-          border: '1px solid rgba(100, 108, 255, 0.2)',
-        }}
-        {...rest}
-      />
+      <input id="input" {...rest} />
     </div>
   )
 }

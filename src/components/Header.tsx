@@ -1,24 +1,36 @@
-import { Ticket } from 'lucide-react'
+import { Moon, Sun, Ticket } from 'lucide-react'
+import * as Switch from '@radix-ui/react-switch'
+import { useEffect, useState } from 'react'
 
 export function Header() {
+  const [theme, setTheme] = useState('light')
+
+  function toggleTheme() {
+    setTheme(theme === 'light' ? 'dark' : 'light')
+  }
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+  }, [theme])
+
   return (
-    <header style={styles.container}>
-      <Ticket size="32" color="#646cff" />
-      <h1 style={styles.title}>Passagens Mobifácil</h1>
+    <header id="header">
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        <Ticket size="32" color="#646cff" />
+        <h1 style={{ fontSize: '2rem' }}>Passagens Mobifácil</h1>
+      </div>
+
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <Switch.Root id="switchRoot" onClick={toggleTheme}>
+          <Switch.Thumb id="switchThumb">
+            {theme === 'light' ? (
+              <Sun size={16} color="#121212" />
+            ) : (
+              <Moon size={16} color="#121212" />
+            )}
+          </Switch.Thumb>
+        </Switch.Root>
+      </div>
     </header>
   )
-}
-
-const styles = {
-  container: {
-    padding: '12px 32px',
-    display: 'flex',
-    alignItems: 'center',
-    gap: '14px',
-    backgroundColor: '#181818',
-    boxShadow: '0 -2px 10px rgba(0, 0, 0, 1)',
-  },
-  title: {
-    fontSize: '2rem',
-  },
 }

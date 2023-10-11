@@ -1,12 +1,24 @@
 :root {
+  --primaryTextColor: #000000;
+  --primaryTitleColor: #181818;
+  --primaryBackgroundColor: #ffffff;
+  --primaryButtonBackgroundColor: #f2f2f2;
+  --primaryInputBackgroundColor: #f2f2f2;
+  --primaryInputTextColor: #181818;
+  --primaryBaseColor: #4f55c9;
+  --secondaryBaseColor: #646cff;
+  --listItemText: #181818;
+  --borderListColor: #f2f2f2;
+  --modalOverlayColor: #181818;
+  --modalContentBackground: #ffffff;
+  --modalTitleColor: #181818;
   font-family: Nunito, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #121212;
-
+  color: var(--primaryTextColor);
+  background-color: var(--primaryBackgroundColor);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,6 +29,53 @@
 #root {
   width: 100%;
   margin: 0 auto;
+}
+
+#header {
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  background-color: var(--primaryBackgroundColor);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+}
+
+#input {
+  width: 25%;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  background-color: var(--primaryInputBackgroundColor);
+  border: 1px solid rgba(100, 108, 255, 0.2);
+}
+
+#tableHeader {
+  color: var(--primaryBaseColor);
+}
+
+#listItemText {
+  color: var(--listItemText);
+}
+
+#modalOverlay {
+  position: fixed;
+  background-color: var(--modalOverlayColor);
+  opacity: 0.6;
+  inset: 0;
+}
+
+#modalContent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: var(--modalContentBackground);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+#modalTitle {
+  color: var(--modalTitleColor);
 }
 
 #danger {
@@ -36,13 +95,34 @@
   color: #535bf2;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+#switchRoot {
+  all: unset;
+  width: 42px;
+  height: 25px;
+  background-color: #535bf2;
+  border-radius: 9999px;
+  position: relative;
+  box-shadow: 0 2px 10px #121212;
 }
-a:hover {
-  color: #535bf2;
+
+#switchRoot[data-state='checked'] {
+  background-color: #181818;
+}
+
+#switchThumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21px;
+  height: 21px;
+  background-color: #f2f2f2;
+  transition: transform 100ms;
+  border-radius: 9999px;
+  box-shadow: 0 2px 2px #121212;
+}
+
+#switchThumb[data-state='checked'] {
+  transform: translateX(19px);
 }
 
 body {
@@ -55,17 +135,18 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  color: #f2f2f2;
+  color: var(--primaryTitleColor);
 }
 
 th,
 td {
-  border-bottom: 1px solid rgba(242, 242, 242, 0.2);
+  border-bottom: 1px solid var(--borderListColor);
 }
 
 input {
   border: none;
   font-family: Nunito, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: var(--primaryInputTextColor);
 }
 
 input:focus,
@@ -81,7 +162,8 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #222222;
+  color: var(--primaryTextColor);
+  background-color: var(--primaryButtonBackgroundColor);
   cursor: pointer;
   transition: border-color 0.25s;
   outline: none;
@@ -94,15 +176,17 @@ button:focus-visible {
   box-shadow: 0 2px 10px #121212;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+html[data-theme='dark'] {
+  --primaryTextColor: rgba(255, 255, 255, 0.87);
+  --primaryTitleColor: #f2f2f2;
+  --primaryBackgroundColor: #121212;
+  --primaryButtonBackgroundColor: #222222;
+  --primaryInputBackgroundColor: #18191a;
+  --primaryBaseColor: #646cff;
+  --secondaryBaseColor: #535bf2;
+  --listItemText: #e4e6eb;
+  --borderListColor: rgba(242, 242, 242, 0.2);
+  --modalOverColor: #000000;
+  --modalContentBackground: #18191a;
+  --modalTitleColor: #f2f2f2;
 }
