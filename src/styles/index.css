@@ -45,6 +45,7 @@
   width: 25%;
   padding: 0.6rem;
   border-radius: 0.4rem;
+  color: var(--primaryInputTextColor);
   background-color: var(--primaryInputBackgroundColor);
   border: 1px solid rgba(100, 108, 255, 0.2);
 }
@@ -182,6 +183,7 @@ html[data-theme='dark'] {
   --primaryBackgroundColor: #121212;
   --primaryButtonBackgroundColor: #222222;
   --primaryInputBackgroundColor: #18191a;
+  --primaryInputTextColor: #ffffff;
   --primaryBaseColor: #646cff;
   --secondaryBaseColor: #535bf2;
   --listItemText: #e4e6eb;
