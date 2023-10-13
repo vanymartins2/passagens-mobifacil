@@ -12,13 +12,21 @@ export function List({ tickets, isLoading, saveRemovedTicket }: ListProps) {
   const [sortByPassengerName, setSortByPassengerName] = useState(false)
   const [sortedArray, setSortedArray] = useState<FormattedTicket[]>(tickets)
 
-  useEffect(() => {
-    setSortByPassengerName(false)
-    setSortedArray(
-      tickets.sort((a, b) =>
-        a.name.toLowerCase().localeCompare(b.name.toLowerCase())
+  function handleSortingOfArray() {
+    if (sortByPassengerName) {
+      const newTickets = [...tickets]
+      setSortedArray(
+        newTickets.sort((a, b) =>
+          a.name.toLowerCase().localeCompare(b.name.toLowerCase())
+        )
       )
-    )
+    } else {
+      setSortedArray(tickets)
+    }
+  }
+
+  useEffect(() => {
+    handleSortingOfArray()
   }, [sortByPassengerName])
 
   return (
